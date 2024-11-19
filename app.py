@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify , render_template , redirect , url_for , flash, Response
-import cv2
+import cv2 
 
 app = Flask(__name__)
 
