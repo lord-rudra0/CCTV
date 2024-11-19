@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Live Feed</title>
-<head>
 
-<body>
-    <h1>Live Feed</h1>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      img {
+        border: 1px solid #000;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
     <div>
-        <img src="{{ url_for('video') }}" alt="Video Feed" width="50%">
+      <h1>Live Feed</h1>
+      <img src="{{ url_for('video') }}" alt="Video Feed" width="50%" />
     </div>
-
-</body>
+  </body>
 </html>
