@@ -3,9 +3,9 @@ import cv2
 
 app = Flask(__name__)
 
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(1)
 import cv2
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 if not cap.isOpened():
     print("Camera not found!")
 else:
