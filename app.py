@@ -27,7 +27,7 @@ def cctv_feed():
 def index():
     return render_template('index.html')
 
-@app.route('/video')
+@app.route('/https://cctv-integration-system.onrender.com/video')
 def video():
     return Response(cctv_feed(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
