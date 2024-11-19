@@ -4,6 +4,13 @@ import cv2
 app = Flask(__name__)
 
 camera = cv2.VideoCapture(0)
+import cv2
+cap = cv2.VideoCapture(0)
+if not cap.isOpened():
+    print("Camera not found!")
+else:
+    print("Camera found!")
+
 
 def cctv_feed():
     while True:
